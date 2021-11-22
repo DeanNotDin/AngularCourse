@@ -16,8 +16,8 @@ import { FormsModule } from '@angular/forms';
     SuccessMessageComponent
   ],
   imports: [
-    FormsModule,
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   // Bootstrap is the initialization section of our app

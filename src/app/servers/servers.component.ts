@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-// import {isPlatformServer} from "@angular/common";
 
 @Component({
   selector: 'app-servers',
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
+
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = "No servers created!"
@@ -17,8 +17,7 @@ export class ServersComponent implements OnInit {
     }, 2000);
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onServerCreation() {
     this.serverCreationStatus = "Server " + this.serverName + " was created!"
