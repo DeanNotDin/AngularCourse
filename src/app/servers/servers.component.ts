@@ -9,7 +9,7 @@ import {isPlatformServer} from "@angular/common";
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverStatus = "No servers created!"
-  serverName = "Server name"
+  serverName = "Test server"
 
   constructor() {
     setTimeout(() => {
