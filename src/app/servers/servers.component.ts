@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {isPlatformServer} from "@angular/common";
+// import {isPlatformServer} from "@angular/common";
 
 @Component({
   selector: 'app-servers',
@@ -8,7 +8,7 @@ import {isPlatformServer} from "@angular/common";
 })
 export class ServersComponent implements OnInit {
   allowNewServer = false;
-  serverStatus = "No servers created!"
+  serverCreationStatus = "No servers created!"
   serverName = "Test server"
 
   constructor() {
@@ -21,7 +21,7 @@ export class ServersComponent implements OnInit {
   }
 
   onServerCreation() {
-    this.serverStatus = "Server was created!"
+    this.serverCreationStatus = "Server " + this.serverName + " was created!"
   }
 
   onUpdateServerName(event: Event) {
