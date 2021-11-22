@@ -1,0 +1,22 @@
+<hr>
+
+<button
+  class="btn btn-primary"
+  (click)="onDetailsClick()"
+>Display Details</button>
+
+<p
+  *ngIf="areDetailsShown"
+  [ngStyle]="{'background-color': 'yellow','color':'blue'}">
+  Secret password = 'tuna'
+</p>
+
+<div>
+  <ol>
+    <li
+      *ngFor="let click of clicksLog; let i = index"
+      [ngClass] = "{ 'multipleTry' : i > 4 }">
+      Revealed password at {{ time }}
+    </li>
+  </ol>
+</div>
